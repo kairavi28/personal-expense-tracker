@@ -1,3 +1,7 @@
+
+<img width="1697" alt="ss" src="https://github.com/user-attachments/assets/ade6d349-5ea4-4c77-b176-4c47aeeb7c9c">
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -6,7 +10,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
-### `npm start`
+### `npm install`
+
+It would install all the dependencies listed in package.json.
+
+### `npm start` or `npm run start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
