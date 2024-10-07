@@ -22,7 +22,7 @@ function AddExpense() {
   const handleCategoryChange = (e) => {
     setCategory(e.target.value);
   };
-  
+
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -72,7 +72,6 @@ function AddExpense() {
         Add Expense
       </Typography>
 
-  
       <FormControl
         fullWidth
         sx={{
@@ -90,17 +89,13 @@ function AddExpense() {
           value={category}
           label="Category"
           onChange={handleCategoryChange}
-          sx={{ textAlign: "left", fontWeight: 600 }} 
+          sx={{ textAlign: "left", fontWeight: 600 }}
         >
           <MenuItem value="">
             <em>None</em>
           </MenuItem>
           {categories.map((category, index) => (
-            <MenuItem
-              key={index}
-              value={category}
-              sx={{ textAlign: "left" }} 
-            >
+            <MenuItem key={index} value={category} sx={{ textAlign: "left" }}>
               {category}
             </MenuItem>
           ))}
@@ -110,7 +105,7 @@ function AddExpense() {
       <TextField
         label="Amount"
         type="number"
-        value={amount} 
+        value={amount}
         onChange={(e) => setAmount(e.target.value)}
         fullWidth
         sx={{
@@ -135,12 +130,12 @@ function AddExpense() {
           },
         }}
       />
-      
+
       <TextField
         label="Date"
         type="date"
-        value={date} 
-        onChange={(e) => setDate(e.target.value)} 
+        value={date}
+        onChange={(e) => setDate(e.target.value)}
         fullWidth
         InputLabelProps={{
           shrink: true,

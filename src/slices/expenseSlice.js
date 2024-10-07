@@ -23,15 +23,9 @@ const expenseSlice = createSlice({
     },
   },
 });
-
-// Exporting the actions
 export const { addExpense, deleteExpense, editExpense, setExpenses } = expenseSlice.actions;
-
-// Selector to get expenses
-
 export const selectExpenses = (state) => {
   return state.expense.expenses; 
 };
 
-// Exporting the reducer
 export default expenseSlice.reducer;
